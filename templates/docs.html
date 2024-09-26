@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EnvX : A Environment Daily just in terminal format</title>
+        <link rel="shortcut icon" href="../static/img/EnVx(1).png" type="image/x-icon">
+        <link rel="stylesheet" href="../static/css/docs.css">
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="logo">
+                <div id="configText">
+                    <h2 id="logoTempText">EnvX</h2>
+                    <h2 id="underlineDigit">_</h2>
+                </div>
+            </div>
+            <ul class="navKeys">
+                <!-- <li><p id="activatedKey" class="docs">Docs</p></li> -->
+                <li><p id="keys" class="projects">Projects</p></li>
+                <li><p id="important_github">Github</p></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+        <div id="console">
+            <div id="tab_upper">
+                <h4>_></h4>
+                <h3>EnvX Terminal</h3>
+            </div>
+            <div id="code_are_one_line">
+                <h5>envx</h5>
+                <input type="text" id="block_code" placeholder="tsk on">
+            </div>
+        </div>
+
+        {% for proj in projects %}
+        <div id="projects">
+
+        </div>
+        {% endfor %}
+
+        <footer>
+            <div id="footer_logo">
+                <div>
+                    <h2 id="name_logo">EnvX</h2>
+                </div>
+            </div>
+            <p >&copy;2024 EnvX, All rights reserved to <a id="footer_link" href="https://github.com/G4brielXavier" target="_blank">Gabriel Xavier</a></p>
+        </footer>
+    
+        <script src="../static/js/responsive_nav.js"></script>
+        <script src="../static/js/redirects_principal.js"></script>
+    </body>
+</html>
